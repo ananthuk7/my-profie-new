@@ -13,7 +13,7 @@ import Icons from "@/components/icons/Icon.vue";
       <RouterLink to="/about">
         <Icons id="icon-user-o" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
-      <RouterLink to="/">
+      <RouterLink to="/skill">
         <Icons id="icon-document-code" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
       <RouterLink to="/">

@@ -4,7 +4,8 @@ import { onMounted, ref } from "vue";
 <template>
   <div id="about" class="about">
     <div class="about__child">
-      <p>
+      <h3 class="text-5xl font-bold mb-8">About Me</h3>
+      <p class="text-slate-800 text-2xl text-center font-semibold">
         I'm a web developer, graphics designer and UI/UX designer. I love to
         solve design problems, develop new features and design prototypes using
         different mediums. My work is mainly focused on frontend-development. As

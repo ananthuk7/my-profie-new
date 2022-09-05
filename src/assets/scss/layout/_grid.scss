@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+@include flexcol("");
+
+@include respond(phone) {
+  @include flexcol("-sm");
+}
+
+@include respond(tab-port) {
+  @include flexcol("-md");
+}
+@include respond(tab-land) {
+  @include flexcol("-lg");
+}
+@include respond(desktop) {
+  @include flexcol("-xl");
+}
+@include respond(big-desktop) {
+  @include flexcol("-xll");
+}

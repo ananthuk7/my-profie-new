@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
+@import "./layout/grid";
 
 @import "./components/buttons";
+@import "./components/cards";
 
 //pages
 @import "./pages/home";
 @import "./pages/about";
-
+@import "./pages/skills";
 
 //main styles
 @import "./base/base";
-
