@@ -16,16 +16,16 @@ import Icons from "@/components/icons/Icon.vue";
       <RouterLink to="/skill">
         <Icons id="icon-document-code" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
-      <RouterLink to="/">
+      <RouterLink to="/work">
         <Icons id="icon-portfolio" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
-      <RouterLink to="/">
+      <RouterLink to="/qualification">
         <Icons id="icon-study" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
-      <RouterLink to="/">
+      <RouterLink to="/portfolio">
         <Icons id="icon-gallery" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
-      <RouterLink to="/">
+      <RouterLink to="/contact">
         <Icons id="icon-contacts" class=" icons fill-white h-10 w-10 mb-14" />
       </RouterLink>
     </div>

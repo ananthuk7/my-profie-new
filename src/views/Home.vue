@@ -22,7 +22,7 @@ import { ref } from "vue";
         </div>
         <div class="btn-grp mt-12">
           <Button
-            class="btn border border-zinc-900 bg-zinc-900 text-white hover:bg-white hover:text-zinc-900 transition duration-700 ease-out"
+            class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white transition duration-700 ease-out"
             >Resume</Button
           >
           <Button

@@ -17,7 +17,27 @@ const router = createRouter({
       path: '/skill',
       name: 'skill',
       component: () => import('../views/Skills.vue')
-    }
+    },
+    {
+      path: '/work',
+      name: 'work',
+      component: () => import('../views/Work.vue')
+    },
+    {
+      path: '/qualification',
+      name: 'qualification',
+      component: () => import('../views/Education.vue')
+    },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: () => import('../views/Portfolio.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/Contact.vue')
+    },
   ]
 })
 
