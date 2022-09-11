@@ -2,6 +2,16 @@
   font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
-  padding: 0.6rem 6rem;
+  padding: 0.8rem 6rem;
   text-transform: uppercase;
+  &__submit {
+    box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+    color: #212529;
+    &:active {
+      box-shadow: inset 5px 5px 10px #bfbaba, inset -5px -5px 10px #ffffff;
+      color: #bfbaba;
+    }
+  }
 }

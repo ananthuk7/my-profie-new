@@ -2,45 +2,31 @@
 import BaseInput from "@/components/form/BaseInput.vue";
 import BaseTextArea from "@/components/form/BaseTextArea.vue";
 import { ref } from "vue";
+import Button from "../components/Button.vue";
 const value = ref<string>("");
 </script>
 <template>
-  <div class="main">
-    <form>
-      <BaseInput v-model="value" type="text" class="border border-zinc-900" />
-      <div class="row">
-        <div class="col-md-6">
-          <BaseInput
-            v-model="value"
-            type="text"
-            class="border border-zinc-900"
-          />
+  <div class="contact">
+    <h3 class="text-center neo-contact">Contact</h3>
+    <form class="form">
+      <div class="form__group mt-5">
+        <BaseInput v-model="value" placeholder="Full Name" type="text" class="form__input h-20" />
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 pr-5">
+          <BaseInput v-model="value" type="text" class="form__input h-20" placeholder="Email"/>
         </div>
-        <div class="col-md-6">
-          <BaseInput
-            v-model="value"
-            type="text"
-            class="border border-zinc-900"
-          />
+        <div class="col-md-6 pl-5">
+          <BaseInput v-model="value" type="text" class="form__input h-20" placeholder="Contact" />
         </div>
       </div>
-      <BaseInput v-model="value" type="text" class="border border-zinc-900" />
-      <BaseTextArea v-model="value" />
+      <div class="form__group mt-5">
+        <BaseInput v-model="value" type="text" class="form__input h-20" placeholder="Subject"/>
+      </div>
+      <div class="form__group mt-5">
+        <BaseTextArea v-model="value" class="form__input" :cols= 5 :rows=10 placeholder="Message"/>
+      </div>
+      <Button type="submit" class="btn btn__submit block mx-auto my-8">Submit</Button>
     </form>
   </div>
 </template>
-
-<style scoped>
-.main {
-  background: #e3dede;
-  height: 100vh;
-  padding: 10rem;
-}
-form {
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 0px;
-  background: #e3dede;
-  box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
-}
-</style>
