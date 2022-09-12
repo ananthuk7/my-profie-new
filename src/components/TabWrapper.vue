@@ -2,7 +2,7 @@
 import { computed, provide, reactive, ref } from "vue";
 
 const active = ref<string | null>(null);
-const tabs = reactive<string[]>([]);
+const tabs = reactive<any[]>([]);
 
 const activate = (tab: any) => {
   active.value = tab;
