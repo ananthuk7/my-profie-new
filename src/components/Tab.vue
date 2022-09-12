@@ -4,9 +4,9 @@ import { inject, onUnmounted, reactive, toRef } from "vue";
 const props = defineProps<{
   title: string;
 }>();
-const register = inject("tabs-register");
+const register: any = inject("tabs-register");
 
-const tab = reactive({
+const tab: any = reactive({
   title: toRef(props, "title"),
 });
 
