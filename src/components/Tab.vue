@@ -16,7 +16,7 @@ onUnmounted(unregister);
 </script>
 
 <template>
-  <div v-if="active" class="tab">
+  <div v-if="active" class="tab pt-9">
     <slot />
   </div>
 </template>

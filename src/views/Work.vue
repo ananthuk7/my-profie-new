@@ -1,12 +1,36 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="work" class="work">
+  <div id="work " class="work pl-52 container pt-12">
+    <h1 class="text-6xl font-bold uppercase mb-12">Work</h1>
     <div class="row">
-      <div class="col-md-4">Date</div>
-      <div class="col-md-8">Content</div>
-      <div class="col-md-4">Date</div>
-      <div class="col-md-8">Content</div>
+      <div class="col-md-4"><p class="work__date">Jun,2020-Jun,2020</p></div>
+      <div class="col-md-8">
+        <div class="work__content">
+          <h1 class="work__title">Dots And Cons</h1>
+          <h2 class="work__subtitle">Web Developer</h2>
+          <p class="work__description">
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            tempore autem delectus asperiores quia reprehenderit quas inventore?
+            Non, odit ut cupiditate molestias delectus expedita ab eos quam sint
+            cum ullam.
+          </p>
+        </div>
+      </div>
+      <hr class="border border-x-emerald-900 w-full" />
+      <div class="col-md-4"><p class="work__date">Jun,2020-Jun,2020</p></div>
+      <div class="col-md-8">
+        <div class="work__content">
+          <h1 class="work__title">Dots And Cons</h1>
+          <h2 class="work__subtitle">Web Developer</h2>
+          <p class="work__description">
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            tempore autem delectus asperiores quia reprehenderit quas inventore?
+            Non, odit ut cupiditate molestias delectus expedita ab eos quam sint
+            cum ullam.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>

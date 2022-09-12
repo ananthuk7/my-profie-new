@@ -31,7 +31,7 @@ provide("tabs-register", (tab: any) => {
     <div class="header">
       <button
         v-for="tab in tabs"
-        class="btn border border-zinc-900"
+        class="btn border border-zinc-900 transition-all duration-700"
         :class="{ active: tab === active }"
         @click="activate(tab)"
       >

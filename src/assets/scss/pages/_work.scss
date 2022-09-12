@@ -1,0 +1,25 @@
+.work {
+  color: #212529;
+  &__date {
+    font-size: 2rem;
+    font-weight: 500;
+    color: inherit;
+  }
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: inherit;
+  }
+  &__subtitle {
+    color: inherit;
+    font-weight:500;
+    font-size: 2rem;
+  }
+  &__description {
+    font-size: 1.6rem;
+    color: inherit;
+    font-weight:400;
+    margin-bottom: 2rem;
+  }
+}
