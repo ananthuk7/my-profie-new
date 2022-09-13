@@ -6,12 +6,12 @@ import { onMounted, ref } from "vue";
     <div class="about__child">
       <h3 class="text-5xl font-bold mb-8">About Me</h3>
       <p class="text-slate-800 text-2xl text-center font-semibold">
-        I'm a web developer, graphics designer and UI/UX designer. I love to
-        solve design problems, develop new features and design prototypes using
-        different mediums. My work is mainly focused on frontend-development. As
-        for graphic designs, my work mainly involves photo manipulation.
-        Besides, I also like doing photography and videography, where I can
-        express my creative thought process.
+        I'm a web developer and UI/UX developer. I love to solve design
+        problems, develop new features and design prototypes using different
+        mediums. My work is mainly focused on frontend-development. As for
+        graphic designs, my work mainly involves photo manipulation. Besides, I
+        also like doing photography and videography, where I can express my
+        creative thought process.
       </p>
     </div>
   </div>

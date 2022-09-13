@@ -3,8 +3,6 @@
   background-image: linear-gradient(to right, black 30%, white 30%);
   &__content {
     height: 40rem;
-    width: 90rem;
-    display: flex;
   }
 }
 .image {
@@ -13,11 +11,13 @@
     width: 50rem;
     background-color: #fff;
     padding-right: 2rem;
+    position: relative;
   }
   &__prop {
     height: 100%;
-    margin-left: 1rem;
-    margin-top: -1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: -1.5rem;
   }
 }
 .content-wrapper {

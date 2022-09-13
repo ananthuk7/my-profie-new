@@ -1,16 +1,20 @@
 .contact {
   background: #e3dede8f;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-left:5rem;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
 }
 .neo-contact {
+  font-size: 4rem;
   color: #e3dede;
   text-shadow: 2px 2px 4px #ada9a9, -2px -2px 4px #ffffff;
-  font-size: 5.1rem;
-  text-transform: uppercase;
-  margin-bottom:1rem;
+  margin-bottom: 2rem;
+  @include respond(tab-port) {
+    font-size: 5.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
 }
