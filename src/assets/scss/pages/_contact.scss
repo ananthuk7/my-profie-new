@@ -11,10 +11,10 @@
   font-size: 4rem;
   color: #e3dede;
   text-shadow: 2px 2px 4px #ada9a9, -2px -2px 4px #ffffff;
+  text-transform: uppercase;
   margin-bottom: 2rem;
   @include respond(tab-port) {
     font-size: 5.1rem;
-    text-transform: uppercase;
     margin-bottom: 1rem;
   }
 }
