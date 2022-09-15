@@ -24,13 +24,13 @@ import { ref } from "vue";
               <h1 class="content-wrapper__text--head1">Ananthu Krishnan</h1>
               <h3 class="content-wrapper__text--head2">Web Developer</h3>
             </div>
-            <div class="btn-grp mt-12">
+            <div class="btn__grp mt-12">
               <Button
                 class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white transition duration-700 ease-out"
                 >Resume</Button
               >
               <Button
-                class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white ml-5 transition duration-700 ease-out"
+                class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white ml-0 lg:ml-5 mt-2 lg:mt-0 transition duration-700 ease-out"
                 >Hire Me</Button
               >
             </div>

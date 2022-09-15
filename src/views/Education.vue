@@ -14,7 +14,6 @@ import Tab from "@/components/Tab.vue";
           <div class="col-md-8">
             <div class="work__content">
               <h1 class="work__title">Mahaghuru Institute of Technology</h1>
-              >
               <h2 class="work__subtitle">
                 Bachelor's degree, Computer Science
               </h2>
