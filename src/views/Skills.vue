@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div class="pd-screen skills">
-    <h3 class="text-7xl font-bold text-center mb-32">What I Do</h3>
+    <h3 class="text-5xl md:text-7xl font-bold text-center mb-10">What I Do</h3>
     <div class="row">
       <!-- <div class="col col-sm-6 col-md-4">
         <div class="card w-full sm:w-11/12 mx-auto">
