@@ -7,7 +7,7 @@ import { ref } from "vue";
   <div class="main flex items-center justify-center min-h-screen">
     <div class="main__content">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col col-lg-4">
           <div class="image__container">
             <img
               src="@/assets/images/ananthu.png"
@@ -16,7 +16,7 @@ import { ref } from "vue";
             />
           </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col col-lg-8">
           <div
             class="content-wrapper flex items-center justify-center flex-col w-full h-full"
           >

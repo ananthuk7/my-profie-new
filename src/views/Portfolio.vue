@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="portfolio pl-52" id="portfolio">
+  <div class="portfolio pd-screen" id="portfolio">
     <h1 class="text-6xl uppercase font-bold py-10">Portfolio</h1>
     <div class="row">
       <div class="col col-sm-6 col-lg-4 mt-5">

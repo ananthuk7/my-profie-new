@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="work " class="work pl-52 container pt-12">
+  <div id="work " class="work pd-screen container pt-12">
     <h1 class="text-6xl font-bold uppercase mb-12">Work</h1>
     <div class="row">
       <div class="col-md-4"><p class="work__date">Jun,2022-present</p></div>

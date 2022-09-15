@@ -4,55 +4,64 @@ import TabWrapper from "@/components/TabWrapper.vue";
 import Tab from "@/components/Tab.vue";
 </script>
 <template>
-  <TabWrapper class="my-5">
-    <Tab title="Education">
-      <div class="row">
-        <div class="col-md-4"><p class="work__date">May,2016-Sep,2020</p></div>
-        <div class="col-md-8">
-          <div class="work__content">
-            <h1 class="work__title">Mahaghuru Institute of Technology</h1>
-            >
-            <h2 class="work__subtitle">Bachelor's degree, Computer Science</h2>
-            <!-- <p class="work__description">
+  <div class="pd-screen">
+    <TabWrapper class="my-5">
+      <Tab title="Education">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="work__date">May,2016-Sep,2020</p>
+          </div>
+          <div class="col-md-8">
+            <div class="work__content">
+              <h1 class="work__title">Mahaghuru Institute of Technology</h1>
+              >
+              <h2 class="work__subtitle">
+                Bachelor's degree, Computer Science
+              </h2>
+              <!-- <p class="work__description">
               - Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
               tempore autem delectus asperiores quia reprehenderit quas
               inventore? Non, odit ut cupiditate molestias delectus expedita ab
               eos quam sint cum ullam.
             </p> -->
+            </div>
           </div>
-        </div>
-        <hr class="border border-x-emerald-900 w-full" />
-        <div class="col-md-4"><p class="work__date">Jun,2014-Jun,2016</p></div>
-        <div class="col-md-8">
-          <div class="work__content">
-            <h1 class="work__title">BJSM Madathil</h1>
-            <h2 class="work__subtitle">Higher Secondary</h2>
-            <!-- <p class="work__description">
+          <hr class="border border-x-emerald-900 w-full" />
+          <div class="col-md-4">
+            <p class="work__date">Jun,2014-Jun,2016</p>
+          </div>
+          <div class="col-md-8">
+            <div class="work__content">
+              <h1 class="work__title">BJSM Madathil</h1>
+              <h2 class="work__subtitle">Higher Secondary</h2>
+              <!-- <p class="work__description">
               - Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
               tempore autem delectus asperiores quia reprehenderit quas
               inventore? Non, odit ut cupiditate molestias delectus expedita ab
               eos quam sint cum ullam.
             </p> -->
+            </div>
           </div>
         </div>
-      </div>
-    </Tab>
-    <Tab title="Internship">
-      <div class="row">
-        <div class="col-md-4"><p class="work__date">May,2021-Aug,2021</p></div>
-        <div class="col-md-8">
-          <div class="work__content">
-            <h1 class="work__title">Luminar Technolab</h1>
-            <h2 class="work__subtitle">Python Django</h2>
-            <!-- <p class="work__description">
+      </Tab>
+      <Tab title="Internship">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="work__date">May,2021-Aug,2021</p>
+          </div>
+          <div class="col-md-8">
+            <div class="work__content">
+              <h1 class="work__title">Luminar Technolab</h1>
+              <h2 class="work__subtitle">Python Django</h2>
+              <!-- <p class="work__description">
               - Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
               tempore autem delectus asperiores quia reprehenderit quas
               inventore? Non, odit ut cupiditate molestias delectus expedita ab
               eos quam sint cum ullam.
             </p> -->
+            </div>
           </div>
-        </div>
-        <!-- <hr class="border border-x-emerald-900 w-full" />
+          <!-- <hr class="border border-x-emerald-900 w-full" />
         <div class="col-md-4"><p class="work__date">Jun,2020-Jun,2020</p></div>
         <div class="col-md-8">
           <div class="work__content">
@@ -66,9 +75,10 @@ import Tab from "@/components/Tab.vue";
             </p>
           </div>
         </div> -->
-      </div>
-    </Tab>
-  </TabWrapper>
+        </div>
+      </Tab>
+    </TabWrapper>
+  </div>
 </template>
 
 <style scoped></style>

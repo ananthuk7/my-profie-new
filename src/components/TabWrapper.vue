@@ -27,7 +27,7 @@ provide("tabs-register", (tab: any) => {
 </script>
 
 <template>
-  <div class="tabs pl-80">
+  <div class="tabs">
     <div class="header">
       <button
         v-for="tab in tabs"
@@ -46,7 +46,7 @@ provide("tabs-register", (tab: any) => {
 
 <style scoped>
 .active {
-  background-color: rgb(24 24 27 );
-  color:#fff;
+  background-color: rgb(24 24 27);
+  color: #fff;
 }
 </style>
