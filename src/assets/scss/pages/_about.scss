@@ -1,39 +1,57 @@
 .about {
-  height: 100vh;
   background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5rem 0 10rem;
+  @include respond(tab-land) {
+    height: 100vh;
+  }
   &__child {
     position: relative;
-    margin-left: 5rem;
-    height: 40rem;
-    width: 70%;
-    border-radius: 0 1.6rem 0 1.6rem;
+    margin-left: 0;
+    height: 35rem;
+    width: 90%;
+    border-radius: 1.6rem;
     background: #e0e0e0;
     box-shadow: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #fbfbfb;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
-    &::after {
-      content: " ";
-      height: 3rem;
-      width: 3rem;
-      position: absolute;
-      top: -1.5rem;
-      left: -1.5rem;
-      background: #2b2727;
+    padding: 1.5rem;
+    @include respond(phone) {
+      height: 30rem;
+      border-radius: 0 1.6rem 0 1.6rem;
+      width: 80%;
+      padding: 2rem;
     }
+    @include respond(tab-land) {
+      height: 40rem;
+      margin-left: 5rem;
+      width: 70%;
+    }
+    &::after,
     &::before {
       content: " ";
+      position: absolute;
+      background: #2b2727;
+      display: none;
+      @include respond(phone) {
+        display: block;
+      }
+    }
+    &::after {
+      height: 3rem;
+      width: 3rem;
+      top: -1.5rem;
+      left: -1.5rem;
+    }
+    &::before {
       height: 2rem;
       width: 2rem;
-      position: absolute;
       right: -0.8rem;
       bottom: -0.8rem;
-      background: #2b2727;
     }
   }
 }
