@@ -1,11 +1,16 @@
 .contact {
+  min-height: 100vh;
   background: #e3dede8f;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-left: 5rem;
+  padding-left: 0;
   padding-bottom: 11rem;
+  padding-top:3rem;
+  @include respond(tab-land) {
+    padding-left: 5rem;
+  }
 }
 .neo-contact {
   font-size: 4rem;

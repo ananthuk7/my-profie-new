@@ -1,16 +1,16 @@
 .form {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   background: #e3dede;
   box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
   border-radius: 1rem;
-  padding: 1.5rem;
-  // &__group {
-  //   width: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
+  padding: 3rem;
+  @include respond(phone) {
+    width: 90%;
+  }
+  @include respond(tab-port) {
+    width: 80%;
+  }
   &__input {
     width: 100%;
     display: block;

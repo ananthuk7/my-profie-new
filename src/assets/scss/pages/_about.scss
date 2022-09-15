@@ -4,9 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 5rem 0 10rem;
-  @include respond(tab-land) {
-    height: 100vh;
-  }
+  min-height: 100vh;
   &__child {
     position: relative;
     margin-left: 0;

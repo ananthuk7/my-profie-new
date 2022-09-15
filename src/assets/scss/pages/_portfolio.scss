@@ -1,25 +1,19 @@
 .portfolio {
   background: #e3dede8f;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
   &__img-container {
     width: 95%;
     margin: 0 auto;
     height: 28rem;
-    overflow: hidden;
-    position: relative;
+    background-position: top;
+    background-size: cover;
     border: 1px solid #fdfdfd;
     box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
-    &:hover .portfolio__img {
-      bottom: 0;
+    transition: all 4s;
+    &:hover {
+      background-position: bottom;
     }
-  }
-  &__img {
-    position: absolute; 
-    bottom: calc(-126.3rem + 28rem);
-    left: 0;
-    right: 0;
-    transition: all 5s;
-    width: 100%;
-    object-fit: cover;
   }
 }
