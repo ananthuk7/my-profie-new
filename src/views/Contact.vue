@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import BaseInput from "@/components/form/BaseInput.vue";
-import BaseTextArea from "@/components/form/BaseTextArea.vue";
 import { ref } from "vue";
-import Button from "../components/Button.vue";
 const value = ref<string>("");
 </script>
 <template>
@@ -52,11 +49,11 @@ const value = ref<string>("");
           placeholder="Message"
         />
       </div>
-      <Button type="submit" class="btn btn__submit block mx-auto my-8"
-        >Submit</Button
+      <VueButton type="submit" class="btn btn__submit block mx-auto my-8"
+        >Submit</VueButton
       >
     </form>
   </div>
 </template>
 
-<!-- 18605009900   banker@idfcfirstbank.com -->
+

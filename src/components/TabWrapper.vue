@@ -29,14 +29,14 @@ provide("tabs-register", (tab: any) => {
 <template>
   <div class="tabs">
     <div class="header">
-      <button
+      <VueButton
         v-for="tab in tabs"
         class="btn border border-zinc-900 transition-all duration-700"
         :class="{ active: tab === active }"
         @click="activate(tab)"
       >
         {{ tab.title }}
-      </button>
+      </VueButton>
     </div>
     <div class="body">
       <slot />

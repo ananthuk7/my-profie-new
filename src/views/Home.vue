@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import Button from "@/components/Button.vue";
-import { ref } from "vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="main flex items-center justify-center min-h-screen">
@@ -25,13 +22,13 @@ import { ref } from "vue";
               <h3 class="content-wrapper__text--head2">Web Developer</h3>
             </div>
             <div class="btn__grp mt-12">
-              <Button
+              <VueButton
                 class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white transition duration-700 ease-out"
-                >Resume</Button
+                >Resume</VueButton
               >
-              <Button
+              <VueButton
                 class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white ml-0 lg:ml-5 mt-2 lg:mt-0 transition duration-700 ease-out"
-                >Hire Me</Button
+                >Hire Me</VueButton
               >
             </div>
           </div>
