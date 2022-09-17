@@ -35,5 +35,6 @@ import Icons from "@/components/icons/Icon.vue";
 <style lang="scss">
 a.router-link-exact-active .icons {
   fill: aqua;
+  
 }
 </style>
