@@ -14,10 +14,10 @@ const props = defineProps<Props>();
 <template>
   <div class="work__card">
     <div class="row">
-      <div class="col-md-4 col-lg-3">
+      <div class="col-md-4">
         <p class="work__date">{{ props.work?.period }}</p>
       </div>
-      <div class="col-md-8 col-lg-9">
+      <div class="col-md-8">
         <div class="work__content">
           <h1 class="work__title">{{ props.work?.company }}</h1>
           <h2 class="work__subtitle">{{ props.work?.designation }}</h2>

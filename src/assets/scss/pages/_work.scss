@@ -13,6 +13,8 @@
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: .25rem;
+    text-align: center;
   }
   &__title {
     font-size: 2.5rem;
@@ -31,5 +33,6 @@
   &__list{
     font-size: 1.6rem;
     font-weight: 400;
+    hyphens: auto;
   }
 }

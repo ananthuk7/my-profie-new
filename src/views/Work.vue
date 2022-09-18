@@ -48,7 +48,7 @@ const workData: WorkDetails[] = [
 
 <template>
   <div id="work " class="work pd-screen pt-12">
-    <h1 class="text-6xl font-bold uppercase mb-12">Work</h1>
+    <h1 class="text-6xl font-bold uppercase mb-0 md:mb-12">Work</h1>
     <WorkCard v-for="work in workData" :work="work" />
   </div>
 </template>
