@@ -31,7 +31,7 @@ provide("tabs-register", (tab: any) => {
     <div class="header">
       <VueButton
         v-for="tab in tabs"
-        class="btn border border-zinc-900 transition-all duration-700"
+        class="text-2xl sm:text-3xl font-medium pointer px-12 py-4 uppercase sm:py-4 sm:px-24 border border-zinc-900 transition-all duration-700"
         :class="{ active: tab === active }"
         @click="activate(tab)"
       >
