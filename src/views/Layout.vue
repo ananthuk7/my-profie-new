@@ -7,8 +7,29 @@ import Sidebar from "@/components/Sidebar.vue";
       <Sidebar />
     </div>
     <div class="flex-1">
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <transition name="grow" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </RouterView>
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.grow-enter-from {
+  opacity: 0;
+  transform: scale3d(.5, 0.4, -.5);
+  backface-visibility: hidden;
+}
+.grow-enter-active {
+  transition: all 0.45s ease-in;
+}
+.grow-leave-to {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.grow-leave-active {
+  transition: 0.45s ease-out;
+}
+</style>
