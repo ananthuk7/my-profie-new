@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import bgImf from "@/assets/images/screenshot.png";
+import { titleChange } from "@/composables/useTitle";
+titleChange("Portfolio");
 </script>
 
 <template>

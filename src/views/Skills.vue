@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Card from "@/components/Cards.vue";
 import imgUrl from "@/assets/images/web-bg.png";
+import { titleChange } from "@/composables/useTitle";
+titleChange("Skills");
 </script>
 <template>
   <div class="pd-screen skills">

@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { titleChange } from "@/composables/useTitle";
+titleChange("About");
 </script>
 <template>
   <div id="about" class="about">

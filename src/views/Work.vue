@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import WorkCard from "@/components/WorkCard.vue";
+import { titleChange } from "@/composables/useTitle";
+titleChange("Experience");
 interface WorkDetails {
   period: string;
   company: string;

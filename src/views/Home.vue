@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-
+import { titleChange } from "@/composables/useTitle";
+titleChange("Home");
 const router = useRouter();
-console.log(router);
 /**
  *@description A function that is called when the user clicks on the Hire Me button. It is using the router to navigate to the contact page.
  *@returns void

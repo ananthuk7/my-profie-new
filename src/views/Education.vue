@@ -3,6 +3,8 @@ import { ref } from "vue";
 import TabWrapper from "@/components/TabWrapper.vue";
 import Tab from "@/components/Tab.vue";
 import WorkCard from "@/components/WorkCard.vue";
+import { titleChange } from "@/composables/useTitle";
+titleChange("Qualification");
 interface WorkDetails {
   period: string;
   company: string;

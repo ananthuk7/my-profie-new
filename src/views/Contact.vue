@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { titleChange } from "@/composables/useTitle";
+titleChange("Contact");
 const value = ref<string>("");
 </script>
 <template>
@@ -55,5 +57,3 @@ const value = ref<string>("");
     </form>
   </div>
 </template>
-
-
