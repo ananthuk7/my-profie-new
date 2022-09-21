@@ -7,8 +7,8 @@ import Sidebar from "@/components/Sidebar.vue";
       <Sidebar />
     </div>
     <div class="flex-1">
-      <RouterView v-slot="{ Component }">
-        <transition name="grow" mode="out-in">
+      <RouterView v-slot="{ Component, route }">
+        <transition :name="route.meta.transition || 'fade'" mode="out-in">
           <component :is="Component" />
         </transition>
       </RouterView>
@@ -18,7 +18,7 @@ import Sidebar from "@/components/Sidebar.vue";
 <style scoped>
 .grow-enter-from {
   opacity: 0;
-  transform: scale3d(.5, 0.4, -.5);
+  transform: scale3d(0.5, 0.4, -0.5);
   backface-visibility: hidden;
 }
 .grow-enter-active {
