@@ -22,7 +22,7 @@ import Sidebar from "@/components/Sidebar.vue";
   backface-visibility: hidden;
 }
 .grow-enter-active {
-  transition: all 0.45s ease-in;
+  transition: all 0.5s ease-in;
 }
 .grow-leave-to {
   opacity: 1;
@@ -30,7 +30,7 @@ import Sidebar from "@/components/Sidebar.vue";
 }
 
 .grow-leave-active {
-  transition: 0.45s ease-out;
+  transition: 0.5s ease-out;
 }
 .fade-enter-from {
   opacity: 0;
