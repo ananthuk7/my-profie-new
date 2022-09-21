@@ -44,12 +44,14 @@
       width: 3rem;
       top: -1.5rem;
       left: -1.5rem;
+      animation: rotate 3s infinite ease-in backwards;
     }
     &::before {
       height: 2rem;
       width: 2rem;
       right: -0.8rem;
       bottom: -0.8rem;
+      animation: rotate1 3s infinite ease-in backwards;
     }
   }
 }

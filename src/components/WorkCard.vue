@@ -15,7 +15,7 @@ const props = defineProps<Props>();
   <div class="work__card">
     <div class="row">
       <div class="col-md-4">
-        <transition name="card-left" mode="in-out" :appear="true">
+        <transition name="card-left" mode="in-out" appear>
           <p class="work__date">{{ props.work?.period }}</p>
         </transition>
       </div>

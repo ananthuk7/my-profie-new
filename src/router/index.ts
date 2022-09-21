@@ -13,37 +13,43 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: () => import('../views/Home.vue'),
-      meta: { transition: 'grow' }
+      meta: { transition: 'fade' }
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/About.vue')
+      component: () => import('../views/About.vue'),
+      meta: { transition: 'grow' }
     },
     {
       path: '/skill',
       name: 'skill',
-      component: () => import('../views/Skills.vue')
+      component: () => import('../views/Skills.vue'),
+      meta: { transition: 'grow' }
     },
     {
       path: '/work',
       name: 'work',
-      component: () => import('../views/Work.vue')
+      component: () => import('../views/Work.vue'),
+      meta: { transition: 'grow' }
     },
     {
       path: '/qualification',
       name: 'qualification',
-      component: () => import('../views/Education.vue')
+      component: () => import('../views/Education.vue'),
+      meta: { transition: 'grow' }
     },
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: () => import('../views/Portfolio.vue')
+      component: () => import('../views/Portfolio.vue'),
+      meta: { transition: 'grow' }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../views/Contact.vue')
+      component: () => import('../views/Contact.vue'),
+      meta: { transition: 'fade' }
     },
   ]
 })

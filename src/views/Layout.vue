@@ -32,4 +32,17 @@ import Sidebar from "@/components/Sidebar.vue";
 .grow-leave-active {
   transition: 0.45s ease-out;
 }
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 0.5s ease-in;
+}
+.fade-leave-to {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: 0.5s ease-out;
+}
 </style>
