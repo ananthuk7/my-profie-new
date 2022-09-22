@@ -1,8 +1,57 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 import { titleChange } from "@/composables/useTitle";
+import { ref, type Ref } from "vue";
+
 titleChange("Home");
+enum TypedText {
+  TYPING_SPEED = 100,
+  START_INDEX = 0,
+  NEW_TEXT_SPEED = 1100,
+}
+
 const router = useRouter();
+const characterArray: Ref<string[]> = ref(["Web Developer"]);
+const charIndex: Ref<number> = ref(0);
+const charArrayIndex: Ref<number> = ref(0);
+const typedText: Ref<string> = ref("");
+/**
+ *@description A recursive function that is used to type the text in the home page.
+ *@returns void
+ */
+const addTypedText = (): void => {
+  if (charIndex.value < characterArray.value[charArrayIndex.value].length) {
+    typedText.value += characterArray.value[charArrayIndex.value].charAt(
+      charIndex.value
+    );
+    charIndex.value++;
+    setTimeout(addTypedText, TypedText.TYPING_SPEED);
+  } else {
+    setTimeout(removeTypedText, TypedText.TYPING_SPEED);
+  }
+};
+/**
+ *@description recursive function that is used to remove the text that is typed in the home page.
+ *@returns void
+ */
+const removeTypedText = (): void => {
+  if (charIndex.value > TypedText.START_INDEX) {
+    charIndex.value--;
+    typedText.value = typedText.value.substring(
+      TypedText.START_INDEX,
+      charIndex.value
+    );
+    setTimeout(removeTypedText, TypedText.TYPING_SPEED);
+  } else {
+    charArrayIndex.value++;
+    if (charArrayIndex.value >= characterArray.value.length)
+      charArrayIndex.value = TypedText.START_INDEX;
+    setTimeout(addTypedText, TypedText.NEW_TEXT_SPEED);
+  }
+};
+
+addTypedText();
+
 /**
  *@description A function that is called when the user clicks on the Hire Me button. It is using the router to navigate to the contact page.
  *@returns void
@@ -31,7 +80,9 @@ function gotoContact(): void {
           >
             <div class="content-wrapper__text">
               <h1 class="content-wrapper__text--head1">Ananthu Krishnan</h1>
-              <h3 class="content-wrapper__text--head2">Web Developer</h3>
+              <h3 class="content-wrapper__text--head2">
+                {{ typedText }}<span>|</span>
+              </h3>
             </div>
             <div class="btn__grp mt-12">
               <VueButton
