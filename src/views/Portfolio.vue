@@ -14,10 +14,12 @@ const port = [
     url: bgImf,
   },
 ];
+// A transition hook.
 const beforeEnter = (el: any) => {
   el.style.opacity = 0;
   el.style.transform = "translateY(150px)";
 };
+// A transition hook.
 const enter = (el: any, done: any): void => {
   gsap.to(el, {
     opacity: 1,
