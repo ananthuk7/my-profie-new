@@ -51,6 +51,11 @@ const router = createRouter({
       component: () => import('../views/Contact.vue'),
       meta: { transition: 'fade' }
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('../views/NotFound.vue'),
+    },
   ]
 })
 
