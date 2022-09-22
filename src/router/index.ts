@@ -19,7 +19,7 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/About.vue'),
-      meta: { transition: 'grow' }
+      meta: { transition: 'fade' }
     },
     {
       path: '/skill',
