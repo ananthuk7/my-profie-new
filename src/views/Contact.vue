@@ -1,8 +1,33 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import { titleChange } from "@/composables/useTitle";
+import { useField, useForm } from "vee-validate";
+import { object, string, number } from "yup";
 titleChange("Contact");
-const value = ref<string>("");
+
+const validationSchema = object({
+  fullname: string().required("fullname is required"),
+  email: string().required("email is required").email("email is incorrect"),
+  contact: number()
+    .positive()
+    .required("number required")
+    .max(10, "contact number is incorrect"),
+  subject: string().required(),
+  message: string().required(),
+});
+
+const { handleSubmit, errors } = useForm({
+  validationSchema,
+});
+
+const { value: fullname } = useField<string>("fullname");
+const { value: email } = useField<string>("email");
+const { value: contact } = useField<number>("contact");
+const { value: subject } = useField<string>("subject");
+const { value: message } = useField<string>("message");
+
+const submit = handleSubmit((values) => {
+  console.log("submit", values);
+});
 </script>
 <template>
   <div class="contact">
@@ -10,48 +35,53 @@ const value = ref<string>("");
       <h3 class="text-center neo-contact">Contact</h3>
     </transition>
     <transition name="form" appear mode="in-out">
-      <form class="form">
+      <form class="form" @submit.prevent="submit">
         <div class="form__group mt-5">
           <BaseInput
-            v-model="value"
+            v-model="fullname"
             placeholder="Full Name"
             type="text"
             class="form__input h-20"
+            :error="errors.fullname"
           />
         </div>
         <div class="row mt-5">
           <div class="col col-md-6 pr-0 md:pr-5">
             <BaseInput
-              v-model="value"
+              v-model="email"
               type="text"
               class="form__input h-20"
               placeholder="Email"
+              :error="errors.email"
             />
           </div>
           <div class="col col-md-6 pl-0 md:pl-5">
             <BaseInput
-              v-model="value"
+              v-model="contact"
               type="text"
               class="form__input h-20"
               placeholder="Contact"
+              :error="errors.contact"
             />
           </div>
         </div>
         <div class="form__group mt-5">
           <BaseInput
-            v-model="value"
+            v-model="subject"
             type="text"
             class="form__input h-20"
             placeholder="Subject"
+            :error="errors.subject"
           />
         </div>
         <div class="form__group mt-5">
           <BaseTextArea
-            v-model="value"
+            v-model="message"
             class="form__input"
             :cols="5"
             :rows="8"
             placeholder="Message"
+            :error="errors.message"
           />
         </div>
         <VueButton type="submit" class="btn btn__submit block mx-auto my-8"
