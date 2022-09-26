@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import BaseErrorMessage from "./BaseErrorMessage.vue";
 
-defineProps<{
+const props = defineProps<{
   modelValue: string | number;
   error: string;
 }>();
