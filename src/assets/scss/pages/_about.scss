@@ -1,8 +1,6 @@
 .about {
-  background-color: #e0e0e0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: $grey-3;
+  @include flex-center;
   padding: 5rem 0 10rem;
   min-height: 100vh;
   &__child {
@@ -11,11 +9,9 @@
     height: 35rem;
     width: 90%;
     border-radius: 1.6rem;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #fbfbfb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: $grey-3;
+    box-shadow: $box-shadow-2;
+    @include flex-center;
     flex-direction: column;
     padding: 1.5rem;
     @include respond(phone) {
@@ -33,7 +29,7 @@
     &::before {
       content: " ";
       position: absolute;
-      background: #2b2727;
+      background: $black-grey-1;
       display: none;
       @include respond(phone) {
         display: block;

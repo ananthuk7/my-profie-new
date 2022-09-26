@@ -1,21 +1,19 @@
 .contact {
   min-height: 100vh;
-  background: #e3dede8f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: $grey-4;
+  @include flex-center;
   flex-direction: column;
   padding-left: 0;
   padding-bottom: 11rem;
-  padding-top:3rem;
+  padding-top: 3rem;
   @include respond(tab-land) {
     padding-left: 5rem;
   }
 }
 .neo-contact {
   font-size: 4rem;
-  color: #e3dede;
-  text-shadow: 2px 2px 4px #ada9a9, -2px -2px 4px #ffffff;
+  color: $grey-2;
+  text-shadow: $text-shadow;
   text-transform: uppercase;
   margin-bottom: 2rem;
   @include respond(tab-port) {

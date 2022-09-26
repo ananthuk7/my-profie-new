@@ -1,5 +1,5 @@
 .portfolio {
-  background: #fff;
+  background: $white;
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 10rem;
@@ -9,8 +9,8 @@
     height: 28rem;
     background-position: top;
     background-size: cover;
-    border: 1px solid #fdfdfd;
-    box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
+    border: $border-3;
+    box-shadow: $box-shadow-1;
     transition: all 4s;
     &:hover {
       background-position: bottom;

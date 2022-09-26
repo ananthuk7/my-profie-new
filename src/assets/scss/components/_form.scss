@@ -2,7 +2,7 @@
   width: 92%;
   margin: 0 auto;
   background: #e3dede;
-  box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
+  box-shadow: $box-shadow-1;
   border-radius: 1rem;
   padding: 3rem;
   @include respond(phone) {
@@ -17,12 +17,11 @@
     padding: 0.375rem 0.75rem;
     font-size: 1.6rem;
     font-weight: 400;
-    color: #212529;
+    color: $black-grey;
     background-clip: padding-box;
-    // border: 1px solid #ced4da;
-    box-shadow: inset 5px 5px 10px #bfbaba, inset -5px -5px 10px #ffffff;
+    box-shadow: $box-shadow-2;
     border-radius: 0.5rem;
-    background: #e3dede;
+    background: $grey-2;
     margin: 1rem 0;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     outline: none;

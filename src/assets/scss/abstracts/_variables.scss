@@ -1,4 +1,29 @@
+//colors
 
+$white: #fff;
+
+$black: #000;
+$black-grey: #212529;
+$black-grey-1: #2b2727;
+
+$grey-1: #bfbaba;
+$grey-2: #e3dede;
+$grey-3: #e0e0e0;
+$grey-4: #e3dede8f;
+
+$box-shadow-1: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
+$box-shadow-2: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #fbfbfb;
+$box-shadow-3: 5px 5px 10px #ebe5e5, -5px -5px 10px #f3efef;
+$box-shadow-4: inset 5px 5px 10px #bfbaba, inset -5px -5px 10px #ffffff;
+
+$text-shadow: 2px 2px 4px #ada9a9, -2px -2px 4px #ffffff;
+
+$border-1: 1px solid $white;
+$border-2: 0.5rem solid $black;
+$border-3: 1px solid #fdfdfd;
+
+$linear-gradient-1: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+$linear-gradient-2: linear-gradient(to right, $black 30%, $white 30%);
 
 //variables for grids flexbox
 $grid-cols: 12;

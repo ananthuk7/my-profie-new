@@ -5,19 +5,17 @@
   padding: 0.8rem 6rem;
   text-transform: uppercase;
   &__submit {
-    box-shadow: 5px 5px 10px #bfbaba, -5px -5px 10px #ffffff;
+    box-shadow: $box-shadow-1;
     border-radius: 0.5rem;
     transition: all 0.5s;
-    color: #212529;
+    color: $black-grey;
     &:active {
-      box-shadow: inset 5px 5px 10px #bfbaba, inset -5px -5px 10px #ffffff;
-      color: #bfbaba;
+      box-shadow: $box-shadow-4;
+      color: $grey-1;
     }
   }
   &__grp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     width: 100%;
     flex-direction: column;
     @include respond(tab-land) {

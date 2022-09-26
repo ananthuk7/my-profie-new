@@ -1,5 +1,5 @@
 .work {
-  color: #212529;
+  color: $black-grey;
   letter-spacing: 0.1rem;
   min-height: 100vh;
   padding-top: 3rem;
@@ -44,14 +44,6 @@
       font-size: 2rem;
     }
   }
-  // &__description {
-  //   font-size: 1.6rem;
-  //   font-weight: 400;
-  //   margin-bottom: 2rem;
-  //   @include respond(phone) {
-  //     font-size: 1.6rem;
-  //   }
-  // }
   &__list {
     font-size: 1.3rem;
     font-weight: 400;
