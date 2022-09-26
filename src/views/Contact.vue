@@ -4,8 +4,11 @@ import { useField, useForm } from "vee-validate";
 import { object, string, number } from "yup";
 import { ref } from "vue";
 import emailjs from "@emailjs/browser";
+import { useAlertStore } from "@/stores/Alert";
+import { useRouter } from "vue-router";
 titleChange("Contact");
-
+const alert = useAlertStore();
+const router = useRouter();
 const form = ref<HTMLFormElement | string>("");
 
 const validationSchema = object({
@@ -36,17 +39,17 @@ const submit = handleSubmit((values) => {
     )
     .then(
       (result) => {
-        console.log("SUCCESS!", result.text);
+        alert.success("Your Email send successfully");
+        router.push({ name: "home" });
       },
       (error) => {
-        console.log("FAILED...", error.text);
+        alert.error(error.text);
       }
     );
 });
 </script>
 <template>
   <div class="contact">
-    {{}}
     <transition name="head" appear mode="in-out">
       <h3 class="text-center neo-contact">Contact</h3>
     </transition>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Sidebar from "@/components/Sidebar.vue";
+import Alert from "@/components/Alert.vue";
 </script>
 <template>
   <div class="flex flex-col sm:flex-row">
@@ -12,6 +13,7 @@ import Sidebar from "@/components/Sidebar.vue";
           <component :is="Component" />
         </transition>
       </RouterView>
+      <Alert closable />
     </div>
   </div>
 </template>
