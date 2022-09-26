@@ -17,6 +17,7 @@
     "@vueuse/core": "^9.2.0",
     "gsap": "^3.11.1",
     "pinia": "^2.0.17",
+    "uuid": "^9.0.0",
     "vee-validate": "^4.6.9",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3",
