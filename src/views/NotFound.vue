@@ -673,9 +673,11 @@ function gotoHome() {
 #four-not,
 #cloud1,
 #cloud-2,
-#page-not {
+#page-not,
+#circle2 {
   transform-box: fill-box;
   transform-origin: center;
+  backface-visibility: hidden;
 }
 
 #four-not,
@@ -683,10 +685,10 @@ function gotoHome() {
   animation: grow-in 1s infinite linear alternate;
 }
 #cloud1 {
-  animation: cloud 5s infinite linear alternate;
+  animation: cloud 7s infinite linear alternate;
 }
 #cloud-2 {
-  animation: cloud1 6s infinite linear alternate;
+  animation: cloud1 8s infinite linear alternate;
   animation-delay: 0.2s;
 }
 
