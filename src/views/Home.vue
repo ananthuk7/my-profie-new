@@ -2,6 +2,7 @@
 import { useRouter } from "vue-router";
 import { titleChange } from "@/composables/useTitle";
 import { ref, type Ref } from "vue";
+import downloadFile from "@/downlod/Profile.pdf";
 
 titleChange("Home");
 // Used to define the typing speed of the text in the home page.
@@ -91,9 +92,10 @@ function gotoContact(): void {
             </transition>
             <transition name="button" appear mode="in-out">
               <div class="btn__grp mt-12">
-                <VueButton
+                <a
+                  :href="downloadFile"
                   class="btn border border-zinc-900 hover:bg-zinc-900 hover:text-white transition duration-700 ease-out"
-                  >Resume</VueButton
+                  >Resume</a
                 >
                 <VueButton
                   @click="gotoContact()"
