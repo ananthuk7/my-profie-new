@@ -9,7 +9,7 @@ defineProps<{
   <div
     v-for="item in alert?.items"
     :key="item.id"
-    class="text-center w-1/4 pl-5 p-2 absolute top-10 right-10 rounded-lg transition-all duration-300"
+    class="text-center w-4/5 md:w-1/4 pl-5 p-2 absolute top-10 right-2 sm:right-10 rounded-lg transition-all duration-300"
     :class="[
       closable
         ? `flex justify-between ${item?.color}`
