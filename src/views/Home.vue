@@ -73,6 +73,7 @@ function gotoContact(): void {
                 src="@/assets/images/ananthu.png"
                 alt="profile-image"
                 class="image__prop"
+                loading="lazy"
               />
             </transition>
           </div>

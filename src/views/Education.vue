@@ -11,17 +11,25 @@ interface WorkDetails {
   designation: string;
   description?: string[];
 }
-const internShip: WorkDetails = {
-  period: "May,2021 - Aug,2021",
-  company: "Luminar Technolab",
-  designation: "Python-Django",
-  description: [
-    "- Introduction to Python, Python & PyCharm Installation, Identifiers, Data types, Print&Input Functions, Operators, Conditional Staterents, Looping, Control Statements, String Manipulation Functions, Pattern Printing, Set, List, Tuple List Comprehension, Dictionaries, Files Modules&Packages",
-    "- OOPS Concepts, Regular Expressions, CGI, DataBase, MySQL,Exception Handling, Functional Programming , Multithreading, Python to DB.",
-    "- Creating Virtual Environment, Django Installation, Creating Project and App, Understanding Significance of Project Files, Django Architecture, Writing Views, urls, Templates, Models, ORM Queries, Template Inheritance, Django Static Files...",
-    "- Environment Setup and Installation, Http Methods (Get, Post, Put, Patch, Delete ), Post Man / Thunder Client, Serializers(Model Serializers, Serializer Validation, Serializer Relationship), Views(API View, Mixins, Viewsets),Authentication(Basic Authentication, Session Authentication, Token Authentication, JWT), Django Filters",
-  ],
-};
+const internShip: WorkDetails[] = [
+  {
+    period: "Nov,2022 - present",
+    company: "Newton School",
+    designation: "Fullstack Web development",
+    description: ["- Fullstack development using react and node js"],
+  },
+  {
+    period: "May,2021 - Aug,2021",
+    company: "Luminar Technolab",
+    designation: "Python-Django",
+    description: [
+      "- Introduction to Python, Python & PyCharm Installation, Identifiers, Data types, Print&Input Functions, Operators, Conditional Staterents, Looping, Control Statements, String Manipulation Functions, Pattern Printing, Set, List, Tuple List Comprehension, Dictionaries, Files Modules&Packages",
+      "- OOPS Concepts, Regular Expressions, CGI, DataBase, MySQL,Exception Handling, Functional Programming , Multithreading, Python to DB.",
+      "- Creating Virtual Environment, Django Installation, Creating Project and App, Understanding Significance of Project Files, Django Architecture, Writing Views, urls, Templates, Models, ORM Queries, Template Inheritance, Django Static Files...",
+      "- Environment Setup and Installation, Http Methods (Get, Post, Put, Patch, Delete ), Post Man / Thunder Client, Serializers(Model Serializers, Serializer Validation, Serializer Relationship), Views(API View, Mixins, Viewsets),Authentication(Basic Authentication, Session Authentication, Token Authentication, JWT), Django Filters",
+    ],
+  },
+];
 const educationDetails: WorkDetails[] = [
   {
     period: "May,2016 - Sep,2020",
@@ -48,7 +56,7 @@ const educationDetails: WorkDetails[] = [
         <WorkCard v-for="edu in educationDetails" :work="edu" />
       </Tab>
       <Tab title="Internship">
-        <WorkCard :work="internShip" />
+        <WorkCard v-for="int in internShip" :work="int" />
       </Tab>
     </TabWrapper>
   </div>
